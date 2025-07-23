@@ -57,7 +57,7 @@ function playRound(humanChoiche, computerChoice) {
     alert(`Human: ${humanChoiche}\nComputer: ${computerChoice}\nDraw, no points awarded`)
     return 0
   }
-  
+
   let out;
   switch(humanChoiche) {
     case "rock":
@@ -70,12 +70,12 @@ function playRound(humanChoiche, computerChoice) {
       out = (computerChoice == "rock") ? 2 : 1 
       break;
   }
-  
+
   if (out == 1) {
-   alert(`Human: ${humanChoiche}\nComputer: ${computerChoice}\nHuman won the round`)
+    alert(`Human: ${humanChoiche}\nComputer: ${computerChoice}\nHuman won the round`)
     humanScore++;
   } else {
-   alert(`Human: ${humanChoiche}\nComputer: ${computerChoice}\nComputer won the round`)
+    alert(`Human: ${humanChoiche}\nComputer: ${computerChoice}\nComputer won the round`)
     computerScore++;
   }
 
